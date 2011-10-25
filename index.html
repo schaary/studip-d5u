@@ -47,7 +47,7 @@
 			
 			<p>
 				<a href="" class="button">Jetzt Umstellung durchführen</a>
-				<a href="" class="button secondary">Später</a>
+				<a href="" class="button secondary">Später, Erinnerung in 10 Tagen</a>
 			</p>
 			
 		</section>
@@ -56,12 +56,57 @@
 			<header>
 				<h1>2. Ihre Daten</h1>
 			</header>
+			
+			<p>Die hier abgefragten Daten dienen lediglich der Zuordnung zu Ihrer Person. </p>
+			
+			<form class="clearfix">
+				
+				<fieldset>
+					
+					<p>
+						<label for="firstName">Vorname <sup>*</sup></label>
+						<input name="firstName" placeholder="Vorname" required />
+					</p>
+					
+					<p>
+						<label for="lastName">Nachname <sup>*</sup></label>
+						<input name="lastName" placeholder="Nachname" required />
+					</p>
+
+					<p>
+						<label for="birthday">Geburtsdatum <sup>*</sup></label>
+						<input name="birthday" type="date" required />
+					</p>
+					
+					<p>
+						<label for="staffNumber">Personalnummer <sup>*</sup></label>
+						<input name="staffNumber" placeholder="2962" maxlength="4" required />
+						<span class="staffCard">Die 4-stellige Nummer finden Sie auf Ihrer Personalkarte.</span>
+					</p>
+					
+					<p>
+						<label for="number">5-stelliges Nutzerkennzeichen <sup>*</sup></label>
+						<input name="number" placeholder="dk5os" maxlength="5" required />
+					</p>
+					
+					<p>
+						<label for="emailaddress">E-Mail Adresse <sup>*</sup></label>
+						<input type="email" name="emailaddress" placeholder="irgendwas@dozenten.uni-halle.de" required />
+					</p>
+					
+				</fieldset>
+				
+				<input type="submit" name="submit" value="Daten abschicken" />
+			   	<p class="small"><sup>*</sup> Benötigtes Feld.</p>
+			   	
+			</form>
+			
 		</section>
 		
 		<section id="page3">
 			
 			<header>
-				<h1>3. Umstellung Erfolgreich</h1>
+				<h1>3. Umstellung</h1>
 			</header>
 			
 			<div class="notice success">
@@ -69,10 +114,24 @@
 				<p>Ihr Login für Stud.IP wurde erfolgreich umgestellt.</p>
 			</div>
 			
-			<p>Bitte loggen Sie sich noch einmal mit Ihrem neuen Loginkennzeichen und Ihrem alten Passwort (das auch weiterhin gültig ist) ein.</p>
+			<p>Bitte loggen Sie sich noch einmal mit Ihrem neuen Loginkennzeichen und Ihrem alten Passwort ein. Ihr altes Passwort ist gleichzeitig Ihr neues Passwort.</p>
 			
 			<p>
-				<a href="" class="button">Login</a>
+				<a href="" class="button">Zur Startseite</a>
+			</p>
+			
+			<hr />
+			
+			<div class="notice error">
+				<h3>Fehler bei der Umstellung</h3>
+				<p>Ihr Login für Stud.IP konnte nicht umgestellt werden.</p>
+			</div>
+			
+			<p>Bitte starten Sie die Umstellung erneut.</p>
+			
+			<p>
+				<a href="" class="button">Umstellung erneut starten</a>
+				<a href="" class="button secondary">Später, Erinnerung in 10 Tagen</a>
 			</p>
 			
 		</section>
