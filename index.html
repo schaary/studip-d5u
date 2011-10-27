@@ -65,17 +65,17 @@
 					
 					<p>
 						<label for="firstName">Vorname <sup>*</sup></label>
-						<input name="firstName" placeholder="Vorname" required />
+						<input name="firstName" id="firstName" placeholder="Vorname" required />
 					</p>
 					
 					<p>
 						<label for="lastName">Nachname <sup>*</sup></label>
-						<input name="lastName" placeholder="Nachname" required />
+						<input name="lastName" id="lastName" placeholder="Nachname" required />
 					</p>
 					
 					<p>
 						<label for="staffNumber">Personalnummer <sup>*</sup></label>
-						<input name="staffNumber" placeholder="29624" maxlength="5" required />
+						<input name="staffNumber" id="staffNumber" placeholder="29624" maxlength="5" required />
 						<span class="staffCard">Die 5-stellige Nummer finden Sie auf Ihrer Personalkarte.</span>
 					</p>
 
@@ -266,17 +266,25 @@
 				
 				<fieldset class="newLogin">
 					
-					<p class="fullwidth">Folgende Nutzerkennzeichen/E-Mail Kombinationen sind Ihren Daten zugeordnet.</p>
+					<p>Folgende Nutzerkennzeichen/E-Mail Kombinationen sind Ihren Daten zugeordnet. Bitte wählen Sie die gewünschte Kombination aus.</p>
 					
-					<p>
-						<label for="number">5-stelliges Nutzerkennzeichen <sup>*</sup></label>
-						<input name="number" placeholder="dk5os" maxlength="5" required />
-					</p>
-					
-					<p>
-						<label for="emailaddress">E-Mail Adresse <sup>*</sup></label>
-						<input type="email" name="emailaddress" placeholder="irgendwas@dozenten.uni-halle.de" required />
-					</p>
+					<ul>
+						<li class="radiorow">
+							<input name="loginCombi" id="loginCombi1" type="radio" value="dk5os irgendwas@dozenten.uni-halle.de" />
+							<label for="loginCombi1"><span class="kennzeichen">dk5os</span> <span class="email">irgendwas@dozenten.uni-halle.de</span></label>
+						</li>
+						
+						<li class="radiorow">
+							<input name="loginCombi" id="loginCombi2" type="radio" value="dk98ws wasanderes@dozenten.uni-halle.de" />
+							<label for="loginCombi2"><span class="kennzeichen">dk98ws</span> <span class="email">wasanderes@dozenten.uni-halle.de</span></label>
+						</li>
+						
+						<li class="radiorow">
+							<input name="loginCombi" id="loginCombi3" type="radio" value="so3od anderes@dozenten.uni-halle.de" />
+							<label for="loginCombi3"><span class="kennzeichen">so3od</span> <span class="email">der wirklichlaengstevorund.zunameever@dozenten.uni-halle.de</span></label>
+						</li>
+					</ul>
+
 				</fieldset>
 				
 				<fieldset class="buttonrow">

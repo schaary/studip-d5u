@@ -169,7 +169,16 @@ button.secondary, input[type="button"].secondary, input[type="reset"].secondary,
 		
 	}
 
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="checkbox"], input[type="radio"] { 
+	box-sizing: border-box;
+	display: inline;
+	width: auto;
+	margin-right: .5em;
+	margin-bottom: 0;
+	vertical-align: top;
+	margin-top: 3px;
+}
+
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
@@ -291,6 +300,78 @@ input[name="staffNumber"] {
 .birthdayYear {
 	width: 28%;
 	margin-right: 0;
+}
+
+.newLogin p {
+	width: 100%;
+	float: none;
+	margin-bottom: 1.5em;
+}
+
+.newLogin ul {
+	list-style: none;
+	padding-left: 0;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
+}
+
+.radiorow,
+.radiorow label {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.radiorow {
+	clear: both;
+	margin-bottom: 0;
+	border: 1px solid #fff;
+	background: #E8EEF0;
+	padding: 2% 4%;
+	margin-top: -1px;
+}
+
+	.radiorow:hover {
+		background: #ebf4f6;
+	}
+	
+	.radiorow.selected {
+		background-color: #90a0be;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#c4cddb), to(#a2b1c9));
+		background-image: -webkit-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -moz-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -o-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -ms-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: linear-gradient(top, #c4cddb, #a2b1c9);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c4cddb', EndColorStr='#a2b1c9');
+	}
+	
+	.radiorow.selected label,
+	.radiorow:hover label {
+		color: #000;
+	}
+
+.radiorow label {
+	display: inline-block;
+	font-size: 1em;
+	width: 95%;
+	margin-bottom: 0;
+	color: #767676;
+}
+	
+	.radiorow label span {
+		display: inline-block;
+		float: left;
+	}
+	
+	.radiorow .kennzeichen {
+		width: 15%;
+	}
+
+.radiorow .email {
+	width: 85%;
 }
 
 .notice {
