@@ -174,12 +174,21 @@ input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-b
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-input {
+input, select {
 	border: 1px solid #fff;
 	-webkit-box-shadow: inset 0 1px 3px #ccc;
 	-moz-box-shadow: inset 0 1px 3px #ccc;
 	box-shadow: inset 0 1px 3px #ccc;
 	background: #E8EEF0;
+}
+
+select {
+	float: left;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
+	margin-right: 2%;
+	font-size: .9em;
 }
 
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
@@ -240,6 +249,23 @@ h1, h2 {
     text-shadow: #eaeaea 0 1px 0;
 }
 
+.buttonrow,
+.small {
+	background: url('http://studip.uni-halle.de/assets/images/line-horiz.png') repeat-x left top;
+	padding-top: 1em;
+	margin-top: 0;
+}
+
+.small {
+	font-size: .9em;
+	margin-top: 1em;
+}
+
+label sup, .small sup {
+	font-size: 1em;
+	color: #c32e4a;
+}
+
 input[name="staffNumber"] {
 	width: 20%;
 }
@@ -252,6 +278,19 @@ input[name="staffNumber"] {
 	padding-top: .2em;
 	background: transparent url('../img/personalkarte.png') no-repeat left 3px;
 	color: #919191;
+}
+
+.birthdayDay {
+	width: 25%;
+}
+
+.birthdayMonth {
+	width: 43%;
+}
+
+.birthdayYear {
+	width: 28%;
+	margin-right: 0;
 }
 
 .notice {
@@ -307,6 +346,11 @@ input[name="staffNumber"] {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+.fullwidth {
+	width: 100%;
+	float: none;
+	margin-bottom: 1.5em;
+}
 
 /* ==|== media queries ====================================================== */
 
