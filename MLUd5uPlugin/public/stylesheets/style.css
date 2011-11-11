@@ -1,0 +1,474 @@
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { 
+	margin: 0; 
+	font-size: 14px; 
+	line-height: 1.231;
+	background: transparent url('http://studip.uni-halle.de/assets/images/bathtile.jpg') repeat left top;
+}
+
+body, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #444; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a, a:visited { 
+	color: #24437C;
+	text-decoration: none; 
+}
+
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { 
+	margin: 0;
+}
+
+fieldset { 
+	border: 0; 
+	margin: 0; 
+	padding: 0;
+}
+
+label { 
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	font-size: .9em;
+	margin-bottom: .2em;
+}
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { 
+	font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;
+	margin-bottom: 2em;
+	padding: .4em;
+	width: 98%;
+	font-size: 1.1em
+}
+
+fieldset p {
+	width: 48%;
+	float: left;
+	margin: 0;
+}
+
+	fieldset p:nth-child(even) {
+		float: right;
+	}
+
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+
+input:focus, textarea:focus {
+	background: #fff;
+	border: 1px solid #122c5f;
+	outline: none;
+}
+
+input:valid, textarea:valid { 
+	border-color: green;
+	background: #efffef;
+}
+
+input:invalid, textarea:invalid { 
+	border-color: red;
+	box-shadow: 0 0 5px #ff9a9e;
+}
+
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .button:visited { 
+	cursor: pointer;
+	background-color: #e34f54;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e34f54), to(#b62146));
+	background-image: -webkit-linear-gradient(top, #e34f54, #b62146);
+	background-image: -moz-linear-gradient(top, #e34f54, #b62146);
+	background-image: -o-linear-gradient(top, #e34f54, #b62146);
+	background-image: -ms-linear-gradient(top, #e34f54, #b62146);
+	background-image: linear-gradient(top, #e34f54, #b62146);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e34f54', EndColorStr='#b62146');
+	padding: 1% 4%;
+	border: 1px solid white;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	-moz-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+	position: relative;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	display: inline-block;
+	color: #444;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 -1px 0 #444;
+	width: auto;
+	margin-bottom: 0;
+}
+
+	button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
+		color: #fff;
+		background-color: #f2545a;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f2545a), to(#ce2650));
+		background-image: -webkit-linear-gradient(top, #f2545a, #ce2650);
+		background-image: -moz-linear-gradient(top, #f2545a, #ce2650);
+		background-image: -o-linear-gradient(top, #f2545a, #ce2650);
+		background-image: -ms-linear-gradient(top, #f2545a, #ce2650);
+		background-image: linear-gradient(top, #f2545a, #ce2650);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f2545a', EndColorStr='#ce2650');
+		
+	}
+	
+	button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:active {
+		top: 1px;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+
+button.secondary, input[type="button"].secondary, input[type="reset"].secondary, input[type="submit"].secondary, .button.secondary {
+	background-color: #f0f4f7;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f4f7), to(#98abb6));
+	background-image: -webkit-linear-gradient(top, #f0f4f7, #98abb6);
+	background-image: -moz-linear-gradient(top, #f0f4f7, #98abb6);
+	background-image: -o-linear-gradient(top, #f0f4f7, #98abb6);
+	background-image: -ms-linear-gradient(top, #f0f4f7, #98abb6);
+	background-image: linear-gradient(top, #f0f4f7, #98abb6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f0f4f7', EndColorStr='#98abb6');
+	
+	color: #222;
+	text-shadow: #eaeaea 0 1px 0;
+}
+
+	button.secondary:hover, input[type="button"].secondary:hover, input[type="reset"].secondary:hover, input[type="submit"].secondary:hover, .button.secondary:hover {
+		background-color: #f4f8fc;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f8fc), to(#aabfcd));
+		background-image: -webkit-linear-gradient(top, #f4f8fc, #aabfcd);
+		background-image: -moz-linear-gradient(top, #f4f8fc, #aabfcd);
+		background-image: -o-linear-gradient(top, #f4f8fc, #aabfcd);
+		background-image: -ms-linear-gradient(top, #f4f8fc, #aabfcd);
+		background-image: linear-gradient(top, #f4f8fc, #aabfcd);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f4f8fc', EndColorStr='#aabfcd');
+		
+	}
+
+input[type="checkbox"], input[type="radio"] { 
+	box-sizing: border-box;
+	display: inline;
+	width: auto;
+	margin-right: .5em;
+	margin-bottom: 0;
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+input, select {
+	border: 1px solid #fff;
+	-webkit-box-shadow: inset 0 1px 3px #ccc;
+	-moz-box-shadow: inset 0 1px 3px #ccc;
+	box-shadow: inset 0 1px 3px #ccc;
+	background: #E8EEF0;
+}
+
+select {
+	float: left;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
+	margin-right: 2%;
+	font-size: .9em;
+}
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+
+::-webkit-input-placeholder {
+    color:    #9b9494;
+}
+:-moz-placeholder {
+    color:    #9b9494;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Matthias Kretschmann
+   ========================================================================== */
+
+h1, h2 {
+	color: #000;
+	font-size: 1.5em;
+	background: url('http://studip.uni-halle.de/assets/images/line-horiz.png') repeat-x left bottom;
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+
+#container {
+	max-width: 640px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+#main section {
+	border: 1px solid #fff;
+	padding: 3% 6%;
+	background-color: #D3DEE3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.7)), to(#d3dee3), color-stop(.1,#d3dee3));
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), #d3dee3, #d3dee3 20%);
+    background-image: gradient(linear, left top, left bottom, from(rgba(255,255,255,.4)), to(#d3dee3), color-stop(.1,#d3dee3));
+	-webkit-box-shadow: 0px 2px 10px #777;
+    -moz-box-shadow: 0px 2px 10px #777;
+    box-shadow: 0px 2px 10px #777;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=120, Strength=3);
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    border-top-left-radius: 30px;
+    min-height: 90px;
+    margin: 2em 0;
+    text-shadow: #eaeaea 0 1px 0;
+}
+
+.buttonrow,
+.small {
+	background: url('http://studip.uni-halle.de/assets/images/line-horiz.png') repeat-x left top;
+	padding-top: 1em;
+	margin-top: 0;
+}
+
+.small {
+	font-size: .9em;
+	margin-top: 1em;
+}
+
+label sup, .small sup {
+	font-size: 1em;
+	color: #c32e4a;
+}
+
+input[name="staffNumber"] {
+	width: 20%;
+}
+
+.staffCard {
+	float: right;
+	width: 57%;
+	font-size: .8em;
+	padding-left: 40px;
+	padding-top: .2em;
+	background: transparent url('../img/personalkarte.png') no-repeat left 3px;
+	color: #919191;
+}
+
+.birthdayDay {
+	width: 25%;
+}
+
+.birthdayMonth {
+	width: 43%;
+}
+
+.birthdayYear {
+	width: 28%;
+	margin-right: 0;
+}
+
+.newLogin p {
+	width: 100%;
+	float: none;
+	margin-bottom: 1.5em;
+}
+
+.newLogin ul {
+	list-style: none;
+	padding-left: 0;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
+}
+
+.radiorow,
+.radiorow label {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.radiorow {
+	clear: both;
+	margin-bottom: 0;
+	border: 1px solid #fff;
+	background: #E8EEF0;
+	padding: 2% 4%;
+	margin-top: -1px;
+}
+
+	.radiorow:hover {
+		background: #ebf4f6;
+	}
+	
+	.radiorow.selected {
+		background-color: #90a0be;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#c4cddb), to(#a2b1c9));
+		background-image: -webkit-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -moz-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -o-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: -ms-linear-gradient(top, #c4cddb, #a2b1c9);
+		background-image: linear-gradient(top, #c4cddb, #a2b1c9);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c4cddb', EndColorStr='#a2b1c9');
+	}
+	
+	.radiorow.selected label,
+	.radiorow:hover label {
+		color: #000;
+	}
+
+.radiorow label {
+	display: inline-block;
+	font-size: 1em;
+	width: 95%;
+	margin-bottom: 0;
+	color: #767676;
+}
+	
+	.radiorow label span {
+		display: inline-block;
+		float: left;
+	}
+	
+	.radiorow .kennzeichen {
+		width: 15%;
+	}
+
+.radiorow .email {
+	width: 85%;
+}
+
+.notice {
+	text-align: center;
+	padding: 2%;
+	margin-bottom: 2em;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	-moz-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+	border: 1px solid;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+	.success {
+		/*background-color: #53d251;*/
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 210, 81, 0.40)), to(rgba(65, 166, 62, 0.40)));
+		background-image: -webkit-linear-gradient(top, rgba(83, 210, 81, 0.40), rgba(65, 166, 62, 0.40));
+		background-image: -moz-linear-gradient(top, rgba(83, 210, 81, 0.40), rgba(65, 166, 62, 0.40));
+		background-image: -o-linear-gradient(top, rgba(83, 210, 81, 0.40), rgba(65, 166, 62, 0.40));
+		background-image: -ms-linear-gradient(top, rgba(83, 210, 81, 0.40), rgba(65, 166, 62, 0.40));
+		background-image: linear-gradient(top, rgba(83, 210, 81, 0.40), rgba(65, 166, 62, 0.40));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#53d251', EndColorStr='#41a63e');
+		border-color: #2a6c2a;
+		color: #10280f;
+		
+	}
+	
+	.error {
+		/*background-color: #b92813;*/
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(185, 40, 19, 0.50)), to(rgba(137, 25, 11, 0.50)));
+		background-image: -webkit-linear-gradient(top, rgba(185, 40, 19, 0.50), rgba(137, 25, 11, 0.50));
+		background-image: -moz-linear-gradient(top, rgba(185, 40, 19, 0.50), rgba(137, 25, 11, 0.50));
+		background-image: -o-linear-gradient(top, rgba(185, 40, 19, 0.50), rgba(137, 25, 11, 0.50));
+		background-image: -ms-linear-gradient(top, rgba(185, 40, 19, 0.50), rgba(137, 25, 11, 0.50));
+		background-image: linear-gradient(top, rgba(185, 40, 19, 0.50), rgba(137, 25, 11, 0.50));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b92813', EndColorStr='#89190b');
+		color: #390C06;
+		border-color: #AA1508;
+	}
+	
+	.note {
+		
+	}
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.fullwidth {
+	width: 100%;
+	float: none;
+	margin-bottom: 1.5em;
+}
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 480px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
