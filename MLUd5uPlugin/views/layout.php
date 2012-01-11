@@ -1,23 +1,23 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="de"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie" lang="de"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="de"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="de"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Umstellung Login - Stud.IP Uni Halle</title>
   <meta name="description" content="">
-  <meta name="author" content="">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" href="<?= $url?>/stylesheets/style.css">
-  <!-- end CSS-->
 
-  <script src="<?= $url?>/javascripts/libs/modernizr-2.0.6.min.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -35,22 +35,12 @@
 
     </footer>
   </div> <!--! end of #container -->
+  
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="<?= $url?>/javascripts/jquery-1.7.1.min.js"><\/script>')</script>
 
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="style/js/libs/jquery-1.6.4.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="<?= $url?>/javascripts/plugins.js"></script>
   <script defer src="<?= $url?>/javascripts/script.js"></script>
-  <!-- end scripts-->
-
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
   
 </body>
 </html>

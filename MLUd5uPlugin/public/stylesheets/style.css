@@ -112,14 +112,13 @@ input:invalid, textarea:invalid {
 
 button, input[type="button"], input[type="reset"], input[type="submit"], .button, .button:visited { 
 	cursor: pointer;
-	background-color: #e34f54;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#e34f54), to(#b62146));
-	background-image: -webkit-linear-gradient(top, #e34f54, #b62146);
-	background-image: -moz-linear-gradient(top, #e34f54, #b62146);
-	background-image: -o-linear-gradient(top, #e34f54, #b62146);
-	background-image: -ms-linear-gradient(top, #e34f54, #b62146);
-	background-image: linear-gradient(top, #e34f54, #b62146);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e34f54', EndColorStr='#b62146');
+	background-color: #153163;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
 	padding: 1% 4%;
 	border: 1px solid white;
 	-webkit-box-shadow: 0px 1px 2px #888;
@@ -134,21 +133,14 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 	color: #444;
 	font-weight: bold;
 	color: #fff;
-	text-shadow: 0 -1px 0 #444;
+	text-shadow: 0 -1px 0 #000;
 	width: auto;
 	margin-bottom: 0;
 }
 
 	button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
 		color: #fff;
-		background-color: #f2545a;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#f2545a), to(#ce2650));
-		background-image: -webkit-linear-gradient(top, #f2545a, #ce2650);
-		background-image: -moz-linear-gradient(top, #f2545a, #ce2650);
-		background-image: -o-linear-gradient(top, #f2545a, #ce2650);
-		background-image: -ms-linear-gradient(top, #f2545a, #ce2650);
-		background-image: linear-gradient(top, #f2545a, #ce2650);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f2545a', EndColorStr='#ce2650');
+		background-color: #173885;
 		
 	}
 	
@@ -185,6 +177,12 @@ button.secondary, input[type="button"].secondary, input[type="reset"].secondary,
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f4f8fc', EndColorStr='#aabfcd');
 		
 	}
+
+button.secondary,
+input[type="submit"].secondary,
+.button.secondary {
+	float: right;
+}
 
 input[type="checkbox"], input[type="radio"] { 
 	box-sizing: border-box;
