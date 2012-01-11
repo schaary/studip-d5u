@@ -186,6 +186,12 @@ button.secondary, input[type="button"].secondary, input[type="reset"].secondary,
 		
 	}
 
+button.secondary,
+input[type="submit"].secondary,
+.button.secondary {
+	float: right;
+}
+
 input[type="checkbox"], input[type="radio"] { 
 	box-sizing: border-box;
 	display: inline;
