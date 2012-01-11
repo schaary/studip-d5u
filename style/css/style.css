@@ -93,6 +93,23 @@ fieldset p {
 button, input { line-height: normal; *overflow: visible; }
 table button, table input { *overflow: auto; }
 
+input:focus, textarea:focus {
+	background: #fff;
+	border: 1px solid #122c5f;
+	outline: none;
+}
+
+input:valid, textarea:valid { 
+	border-color: green;
+	background: #efffef;
+}
+
+input:invalid, textarea:invalid { 
+	border-color: red;
+	box-shadow: 0 0 5px #ff9a9e;
+}
+
+
 button, input[type="button"], input[type="reset"], input[type="submit"], .button, .button:visited { 
 	cursor: pointer;
 	background-color: #e34f54;
@@ -169,6 +186,12 @@ button.secondary, input[type="button"].secondary, input[type="reset"].secondary,
 		
 	}
 
+button.secondary,
+input[type="submit"].secondary,
+.button.secondary {
+	float: right;
+}
+
 input[type="checkbox"], input[type="radio"] { 
 	box-sizing: border-box;
 	display: inline;
@@ -202,13 +225,6 @@ select {
 
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
-input:focus, textarea:focus {
-	
-}
-
-input:valid, textarea:valid {  }
-
-input:invalid, textarea:invalid { }
 
 ::-webkit-input-placeholder {
     color:    #9b9494;
