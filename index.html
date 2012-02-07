@@ -10,7 +10,7 @@
   <title>Umstellung Login - Stud.IP Uni Halle</title>
   <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="style/css/style.css">
 
@@ -37,17 +37,17 @@
 				
 			<p>Sehr geehrte/r Frau/Herr {...}</p>
 						
-			<p>Das URZ der Uni Halle konsolidiert die Logins der zentralen IT-Dienste für den Aufbau eines zentralen IDMs.</p>
+			<p>Das URZ der Uni Halle konsolidiert die Logins der zentralen IT-Dienste f&uuml;r den Aufbau eines zentralen IDMs.</p>
 			
-			<p>Die Grundlage bilden die 5-stelligen Loginkennzeichen und universitären Mail-Adressen der Uni Halle, die durch das URZ ausgegeben und verwaltet werden.</p>
+			<p>Die Grundlage bilden die 5-stelligen Nutzerkennzeichen und universit&auml;ren Mail-Adressen der Uni Halle, die durch das URZ ausgegeben und verwaltet werden.</p>
 			
-			<p>Ihr Loginkennzeichen im Stud.IP kann an Hand der vorliegenden Daten nicht automatisch mit den zentralen Logins abgeglichen werden.</p>
+			<p>Ihr Nutzerkennzeichen im Stud.IP kann an Hand der vorliegenden Daten nicht automatisch mit den zentralen Logins abgeglichen werden.</p>
 			
-			<p>Wir bitten Sie deshalb um Ihre Zusammenarbeit. Bitte helfen Sie uns, in dem Sie auf den folgenden Seiten die fehlenden Daten zu ergänzen.</p>
+			<p>Wir bitten Sie deshalb um Ihre Zusammenarbeit. Bitte helfen Sie uns, in dem Sie auf den folgenden Seiten die fehlenden Daten zu erg&auml;nzen.</p>
 			
 			<p class="buttonrow">
-				<a href="" class="button">Jetzt Umstellung durchführen</a>
-				<a href="" class="button secondary">Später, Erinnerung in 10 Tagen</a>
+				<a href="" class="button">Jetzt Umstellung durchf&uuml;hren</a>
+				<a href="" class="button secondary">Sp&auml;ter, Erinnerung in 10 Tagen</a>
 			</p>
 			
 		</section>
@@ -57,26 +57,15 @@
 				<h1>2. Ihre Daten</h1>
 			</header>
 			
-			<p>Die hier abgefragten Daten dienen lediglich der Zuordnung zu Ihrer Person. </p>
+			<p>Die hier abgefragten Daten dienen lediglich der Zuordnung zu Ihrer Person.</p>
 			
 			<form class="clearfix" method="post" action="">
-				
+
 				<fieldset>
 					
 					<p>
-						<label for="firstName">Vorname <sup>*</sup></label>
-						<input name="firstName" id="firstName" placeholder="Vorname" required />
-					</p>
-					
-					<p>
-						<label for="lastName">Nachname <sup>*</sup></label>
-						<input name="lastName" id="lastName" placeholder="Nachname" required />
-					</p>
-					
-					<p>
-						<label for="staffNumber">Personalnummer <sup>*</sup></label>
-						<input name="staffNumber" id="staffNumber" placeholder="29624" maxlength="5" required />
-						<span class="staffCard">Die 5-stellige Nummer finden Sie auf Ihrer Personalkarte.</span>
+						<label for="email">E-Mail Adresse <sup>*</sup></label>
+						<input name="email" id="email" placeholder="email.adresse@abteilung.uni-halle.de" required />
 					</p>
 
 					<p>
@@ -121,7 +110,7 @@
 							<option> - Monat - </option>
 							<option value="January">Januar</option>
 							<option value="Febuary">Februar</option>
-							<option value="March">März</option>
+							<option value="March">M&auml;rz</option>
 							<option value="April">April</option>
 							<option value="May">Mai</option>
 							<option value="June">Juni</option>
@@ -246,55 +235,54 @@
 					
 				</fieldset>
 				
+				<div class="notice error">
+					<h3>Kein Account gefunden</h3>
+					<p>Die von Ihnen eingegebenen Daten konnten keinem Account zugeordnet werden. Bitte &uuml;berpr&uuml;fen Sie Ihre Eingaben und klicken erneut auf <em>Daten &uuml;berpr&uuml;fen</em>.</p>
+					<p>Bei Problemen k&ouml;nnen Sie eine E-Mail an das Support-Team senden.</p>
+					<p class="buttonrow"><a href="mailto:admin@studip.uni-halle.de" class="button secondary">E-Mail an Support schicken</a></p>
+				</div>
+				
 				<fieldset class="buttonrow">
-					<input type="submit" name="submit" value="Daten Überprüfen" />
+					<input type="submit" name="submit" value="Daten &Uuml;berpr&uuml;fen" />
 					<a href="" class="button secondary">Abbrechen, Erinnerung in 10 Tagen</a>
 				</fieldset>
 				
-				<p class="small"><sup>*</sup> Benötigtes Feld.</p>
+				<p class="small"><sup>*</sup> Ben&ouml;tigtes Feld.</p>
 			</form>
 			
 		</section>
 		
 		<section id="page3">
-			
+					
 			<header>
-				<h1>3. Neues Login</h1>
+				<h1>3. Ihre gefundenen Daten</h1>
 			</header>
 			
-			<form class="clearfix" method="post" action="">
+			<form class="clearfix" method="post" action="" id="accountData">
 				
-				<fieldset class="newLogin">
+				<fieldset>
 					
-					<p>Folgende Nutzerkennzeichen/E-Mail Kombinationen sind Ihren Daten zugeordnet. Bitte wählen Sie die gewünschte Kombination aus.</p>
+					<p>Folgende Daten konnten Ihrem Account zugeordnet werden.</p>
 					
 					<ul>
-						<li class="radiorow">
-							<input name="loginCombi" id="loginCombi1" type="radio" value="dk5os irgendwas@dozenten.uni-halle.de" />
-							<label for="loginCombi1"><span class="kennzeichen">dk5os</span> <span class="email">irgendwas@dozenten.uni-halle.de</span></label>
-						</li>
-						
-						<li class="radiorow">
-							<input name="loginCombi" id="loginCombi2" type="radio" value="dk98ws wasanderes@dozenten.uni-halle.de" />
-							<label for="loginCombi2"><span class="kennzeichen">dk98ws</span> <span class="email">wasanderes@dozenten.uni-halle.de</span></label>
-						</li>
-						
-						<li class="radiorow">
-							<input name="loginCombi" id="loginCombi3" type="radio" value="so3od anderes@dozenten.uni-halle.de" />
-							<label for="loginCombi3"><span class="kennzeichen">so3od</span> <span class="email">der wirklichlaengstevorund.zunameever@dozenten.uni-halle.de</span></label>
-						</li>
+						<li><span class="label">Nachname</span> Musterfrau</li>
+						<li><span class="label">Vorname</span> Maria</li>
+						<li><span class="label">Geburtsdatum</span> 27.04.1974</li>
+						<li><span class="label">Nutzerkennzeichen</span> skris</li>
+						<li><span class="label">E-Mail</span> irgendwas@dozenten.uni-halle.de</li>
 					</ul>
-
+					
 				</fieldset>
 				
 				<fieldset class="buttonrow">
-					<input type="submit" name="submit" value="Umstellung abschließen" />
+					<input type="submit" name="submit" value="Angaben best&auml;tigen" />
+					<a href="" class="button secondary">Zur&uuml;ck zur Dateneingabe</a>
 				</fieldset>
 				
 			</form>
 			
 		</section>
-		
+				
 		<section id="page4">
 			
 			<header>
@@ -303,10 +291,10 @@
 			
 			<div class="notice success">
 				<h3>Umstellung Erfolgreich</h3>
-				<p>Ihr Login für Stud.IP wurde erfolgreich umgestellt.</p>
+				<p>Ihr Login f&uuml;r Stud.IP wurde erfolgreich umgestellt.</p>
 			</div>
 			
-			<p>Bitte loggen Sie sich noch einmal mit Ihrem neuen Loginkennzeichen und Ihrem alten Passwort ein. Ihr altes Passwort ist gleichzeitig Ihr neues Passwort.</p>
+			<p>Bitte melden Sie sich erneut mit Ihrem neuen Nutzerkennzeichen und Ihrem alten Passwort ein. Ihr altes Passwort ist gleichzeitig Ihr neues Passwort.</p>
 			
 			<p class="buttonrow">
 				<a href="" class="button">Zur Startseite</a>
@@ -316,14 +304,14 @@
 			
 			<div class="notice error">
 				<h3>Fehler bei der Umstellung</h3>
-				<p>Ihr Login für Stud.IP konnte nicht umgestellt werden.</p>
+				<p>Ihr Login f&uuml;r Stud.IP konnte nicht umgestellt werden.</p>
 			</div>
 			
 			<p>Bitte starten Sie die Umstellung erneut.</p>
 			
 			<p class="buttonrow">
 				<a href="" class="button">Umstellung erneut starten</a>
-				<a href="" class="button secondary">Später, Erinnerung in 10 Tagen</a>
+				<a href="" class="button secondary">Sp&auml;ter, Erinnerung in 10 Tagen</a>
 			</p>
 			
 		</section>
@@ -334,12 +322,7 @@
 
     </footer>
   </div> <!--! end of #container -->
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="style/js/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <script defer src="style/js/script.js"></script>
+  
   
 </body>
 </html>
