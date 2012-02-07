@@ -283,20 +283,6 @@ label sup, .small sup {
 	color: #c32e4a;
 }
 
-input[name="staffNumber"] {
-	width: 20%;
-}
-
-.staffCard {
-	float: right;
-	width: 57%;
-	font-size: .8em;
-	padding-left: 40px;
-	padding-top: .2em;
-	background: transparent url('../img/personalkarte.png') no-repeat left 3px;
-	color: #919191;
-}
-
 .birthdayDay {
 	width: 25%;
 }
@@ -310,77 +296,43 @@ input[name="staffNumber"] {
 	margin-right: 0;
 }
 
-.newLogin p {
+#accountData p {
 	width: 100%;
 	float: none;
 	margin-bottom: 1.5em;
 }
 
-.newLogin ul {
+#accountData ul {
 	list-style: none;
 	padding-left: 0;
-	-webkit-box-shadow: 0 1px 3px #ccc;
-	-moz-box-shadow: 0 1px 3px #ccc;
-	box-shadow: 0 1px 3px #ccc;
-}
-
-.radiorow,
-.radiorow label {
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-}
-
-.radiorow {
-	clear: both;
-	margin-bottom: 0;
-	border: 1px solid #fff;
 	background: #E8EEF0;
 	padding: 2% 4%;
-	margin-top: -1px;
+	border: 1px solid #fff;
 }
 
-	.radiorow:hover {
-		background: #ebf4f6;
+	#accountData li {
+		padding: .5em 0 .5em 160px;
+		font-weight: bold;
+		border-bottom: 1px solid #ddd;
+		-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.7);
+		-moz-box-shadow: 0 1px 0 rgba(255,255,255,.7);
+		box-shadow: 0 1px 0 rgba(255,255,255,.7);
 	}
 	
-	.radiorow.selected {
-		background-color: #90a0be;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#c4cddb), to(#a2b1c9));
-		background-image: -webkit-linear-gradient(top, #c4cddb, #a2b1c9);
-		background-image: -moz-linear-gradient(top, #c4cddb, #a2b1c9);
-		background-image: -o-linear-gradient(top, #c4cddb, #a2b1c9);
-		background-image: -ms-linear-gradient(top, #c4cddb, #a2b1c9);
-		background-image: linear-gradient(top, #c4cddb, #a2b1c9);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c4cddb', EndColorStr='#a2b1c9');
-	}
-	
-	.radiorow.selected label,
-	.radiorow:hover label {
-		color: #000;
+	#accountData li:last-child {
+		border-bottom: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 	}
 
-.radiorow label {
-	display: inline-block;
-	font-size: 1em;
-	width: 95%;
-	margin-bottom: 0;
-	color: #767676;
-}
-	
-	.radiorow label span {
-		display: inline-block;
+	#accountData .label {
+		width: 160px;
+		margin-left: -160px;
+		display: block;
 		float: left;
+		color: #666;
 	}
-	
-	.radiorow .kennzeichen {
-		width: 15%;
-	}
-
-.radiorow .email {
-	width: 85%;
-}
 
 .notice {
 	text-align: center;
@@ -422,6 +374,18 @@ input[name="staffNumber"] {
 	
 	.note {
 		
+	}
+	
+	.notice.error .buttonrow {
+		background: none;
+		border-top: 1px solid #8e635e;
+	}
+	
+	.notice .button {
+		float: none;
+		-webkit-box-shadow: 0px 1px 2px #444;
+		-moz-box-shadow: 0px 1px 2px #444;
+		box-shadow: 0px 1px 2px #444;
 	}
 
 /* ==|== non-semantic helper classes ======================================== */
