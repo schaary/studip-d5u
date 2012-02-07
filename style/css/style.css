@@ -119,7 +119,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 	background-image: -o-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
 	background-image: -ms-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
 	background-image: linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
-	padding: 1% 4%;
+	padding: .5em 2em;
 	border: 1px solid white;
 	-webkit-box-shadow: 0px 1px 2px #888;
 	-moz-box-shadow: 0px 1px 2px #888;
@@ -271,6 +271,7 @@ h1, h2 {
 	background: url('http://studip.uni-halle.de/assets/images/line-horiz.png') repeat-x left top;
 	padding-top: 1em;
 	margin-top: 0;
+	clear: both;
 }
 
 .small {
@@ -281,6 +282,18 @@ h1, h2 {
 label sup, .small sup {
 	font-size: 1em;
 	color: #c32e4a;
+}
+
+#userData .userInput {
+	margin-bottom: 1em;
+}
+
+#userData input {
+	margin-bottom: 0;
+}
+
+input#nkz {
+	width: 40%;
 }
 
 .birthdayDay {
@@ -302,12 +315,15 @@ label sup, .small sup {
 	margin-bottom: 1.5em;
 }
 
-#accountData ul {
+.userInput {
 	list-style: none;
 	padding-left: 0;
 	background: #E8EEF0;
 	padding: 2% 4%;
 	border: 1px solid #fff;
+	-webkit-box-shadow: 0px 2px 4px #ccc;
+	-moz-box-shadow: 0px 2px 4px #ccc;
+	box-shadow: 0px 2px 4px #ccc;
 }
 
 	#accountData li {
@@ -386,6 +402,46 @@ label sup, .small sup {
 		-webkit-box-shadow: 0px 1px 2px #444;
 		-moz-box-shadow: 0px 1px 2px #444;
 		box-shadow: 0px 1px 2px #444;
+	}
+	
+	#userData .notice {
+		text-align: left;
+	}
+	
+	#userData h3 {
+		text-align: center;
+	}
+	
+	#userData .notice .userInput {
+		background: #d6b2ae;
+		background: rgba(255,255,255,.4);
+		border: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 2%;
+	}
+	
+	fieldset#emailCombination p {
+		width: 100%;
+		float: none;
+		margin-bottom: 1em;
+	}
+	
+	fieldset#emailCombination .button.secondary {
+		float: right;
+	}
+
+	.button.secondary {
+		padding-left: .7em;
+		padding-right: .7em;
+	}
+	
+	.button span {
+		font-size: .9em;
+		font-weight: normal;
+		color: #686868;
+		margin-left: 10px;
 	}
 
 /* ==|== non-semantic helper classes ======================================== */
